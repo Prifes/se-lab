@@ -8,6 +8,9 @@ import java.util.Random;
 * (Deliberately contains bugs.)
 */
 public class TorpedoStore {
+  /*
+   * Permanently stored data, so we can reuse it later without having to create new RNGs 
+   */
   private Random generator = new Random();
   // rate of failing to fire torpedos [0.0, 1.0]
   private double FAILURE_RATE = 0.0; //NOSONAR
